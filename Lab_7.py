@@ -83,7 +83,7 @@ plt.ylim(-np.pi/2, np.pi/2)
 writer = PillowWriter(fps=25)
 x_list = []
 y_list = []
-with writer.saving(fig, "sin.gif", 150):
+with writer.saving(fig, "sin_x.gif", 150):
     for x in np.linspace(-10, 10, 150):
         x_list.append(x)
         y_list.append(np.sin(x))
